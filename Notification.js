@@ -8,4 +8,8 @@ let notifications = [
    {message: 'Amet', read: true}
 ];
  
-allRead = notifications.find((notification) => notification.read === false).read
+res = notifications.find((notification) => notification.read === false)
+
+if(res){
+    allRead = res.read
+}
